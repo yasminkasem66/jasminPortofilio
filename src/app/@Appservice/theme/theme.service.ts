@@ -5,23 +5,24 @@ import { Injectable } from '@angular/core';
 })
 export class ThemeService {
 
-  private isDarkMode = false;
+  private isDarkMode = true;
 
   toggleDarkMode() {
     this.isDarkMode = !this.isDarkMode;
-    this.updateTheme();
+    // this.updateTheme();
   }
 
   getCurrentTheme() {
     return this.isDarkMode ? 'dark' : 'light';
   }
 
-  private updateTheme() {
-    if (this.isDarkMode) {
-      document.body.classList.add('dark-theme');
-      document.body.classList.remove('light-theme');
-    } else {
-      document.body.classList.add('light-theme');
-      document.body.classList.remove('dark-theme');
-    }
-  }}
+  // private updateTheme() {
+  //   if (this.isDarkMode) {
+  //     document.body.classList.add('dark-theme');
+  //     document.body.classList.remove('light-theme');
+  //   } else {
+  //     document.body.classList.add('light-theme');
+  //     document.body.classList.remove('dark-theme');
+  //   }
+  // }
+}
