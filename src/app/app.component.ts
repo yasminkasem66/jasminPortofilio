@@ -15,14 +15,11 @@ export class AppComponent {
     
   }
 
- 
   toggleTheme() {
     this.themeService.toggleDarkMode();
   }
 
   getCurrentTheme() {
-    console.log(this.themeService.getCurrentTheme());
-    
     return this.themeService.getCurrentTheme();
   }
 }
