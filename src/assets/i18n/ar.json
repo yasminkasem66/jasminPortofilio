@@ -1,0 +1,16 @@
+{
+  "Header.Item1": "عني",
+  "Header.Item2": "الخبرة",
+  "Header.Item3": "مشاريع",
+  "Header.Item4": "تواصل معي",
+  "Header.cvBtn": "السيره الذاتيه",
+  "Header.cvName": "ياسمين قاسم.pdf",
+  "English": "انجليزي",
+  "Arabic": "عربي",
+  "Banner.Pretitle": "مرحبا!",
+  "Banner.name": "ياسمين قاسم",
+  "Banner.job": "مطور واجهات أمامية",
+  "Banner.Description": "عندي <span class='underline'>خبره اربع سنوات</span> في بناء الأنظمه الأماميه, وواجهات المستخدم, وتقديم حلول تكنولوجيه لجعل الويب عالم أفضل.مجتهده وأسعي دائما لكتابة كود جيد قابل للأستخدام مره أخري وسهل الأستخدام للأخرين بأستخدام, <span class='underline'>أنجلر</span> وأحياناً <span class='underline'>ريأكت</span> وجافا سكريبت.",
+  "Banner.ActionBtn": "تواصل معنا"
+  
+}
