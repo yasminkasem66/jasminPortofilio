@@ -11,6 +11,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ export function createTranslateLoader(http: HttpClient) {
     HttpClientModule,
     HeaderComponent,
     FooterComponent,
+    BrowserAnimationsModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {
