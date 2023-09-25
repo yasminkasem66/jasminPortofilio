@@ -16,11 +16,26 @@
     color: #ff64ff;
   }
   
-.main-font{
-    font-family: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui,
-    BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+.underline {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: #ff64ff;
 }
-.code-font{
-    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco,
-    Monospace;
+.underline:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #ff64ff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0%;
+}
+.underline:hover:after {
+  width: 100%;
+  left: 0;
 }
