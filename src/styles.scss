@@ -16,14 +16,14 @@
     color: #ff64ff;
   }
   
-.main-font{
-    font-family: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui,
-    BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
-}
-.code-font{
-    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco,
-    Monospace;
-}
+// .font-main{
+//     font-family: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui,
+//     BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+// }
+// .font-code{
+//     font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco,
+//     Monospace;
+// }
 
 
 .underline {
@@ -31,7 +31,7 @@
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: #ff64ff !important;
+  color: #ff64ff;
 }
 .underline:after {
   background: none repeat scroll 0 0 transparent;

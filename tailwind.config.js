@@ -4,6 +4,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        main: ["Calibre", "San Francisco" ,"SF Pro Text","-apple-system","system-ui","BlinkMacSystemFont","Roboto"],
+        code: ["SF Mono", "Fira Code"," Fira Mono"," Roboto Mono","ucida Console","Monaco","Monospace"],
+      },
       backgroundColor: {
         'dark': '#0a192f',
         'light': '#ffffff',
@@ -21,3 +25,4 @@ module.exports = {
   plugins: [],
 }
 
+ 

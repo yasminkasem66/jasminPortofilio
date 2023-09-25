@@ -4,13 +4,29 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/@Appservice/theme/theme.service';
 import { Router } from '@angular/router';
 import { LanguageService } from 'src/app/@Appservice/language/language.service';
+import { animate, query, stagger, style, transition, trigger } from '@angular/animations';
  
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  animations: [
+    trigger('animateMenu', [
+      transition(':enter', [
+        query('*', [
+          style({ opacity: 0, transform: 'translateY(-50%)' }),
+          stagger(50, [
+            animate(
+              '250ms cubic-bezier(0.35, 0, 0.25, 1)',
+              style({ opacity: 1, transform: 'none' })
+            ),
+          ]),
+        ]),
+      ]),
+    ]),
+  ],
 })
 export class HeaderComponent {
 
@@ -18,14 +34,14 @@ export class HeaderComponent {
   alt: string = 'English';
 
   constructor(public translate: TranslateService, private themeService: ThemeService,
-    @Inject(DOCUMENT) private document: Document,    private router: Router,     public languageService: LanguageService,
+    @Inject(DOCUMENT) private document: Document,private router: Router,public languageService: LanguageService,
     @Inject(PLATFORM_ID) private platformId: string,
    ) {
-    if (isPlatformBrowser(platformId)) {
-      this.languageService.currentLanguage.subscribe((language) => {
-        this.changeLanguage(language, true);
-      });
-    }
+    // if (isPlatformBrowser(platformId)) {
+    //   this.languageService.currentLanguage.subscribe((language) => {
+    //     this.changeLanguage(language, true);
+    //   });
+    // }
     if (isPlatformBrowser(platformId)) {
       this.themeService.isDarkMode$.subscribe((theme) => {
         this.themeService.updateTheme();

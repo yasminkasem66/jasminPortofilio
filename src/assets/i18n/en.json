@@ -19,6 +19,18 @@
         "My skills also include implementing system improvements, optimizing sites, standardizing patterns, and suggesting and executing ideas that add value to the project I'm working on.",
         "Some of the technologies that I have trained and worked on include (but are not limited to):"
     ],
+    "AboutMe.Skills": [
+        "Angular",
+        "RxJS",
+        "HTML",
+        "CSS",
+        "Express",
+        "Node",
+        "Tailwind",
+        "Jasmine / Karma (TDD)",
+        "CI / CD",
+        "Docker"
+    ],
     "Experience.Title": "Experience",
     "Experience.Jobs": [
         {
