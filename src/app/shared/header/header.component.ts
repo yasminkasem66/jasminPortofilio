@@ -2,14 +2,14 @@ import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/@Appservice/theme/theme.service';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { LanguageService } from 'src/app/@Appservice/language/language.service';
 import { animate, query, stagger, style, transition, trigger } from '@angular/animations';
  
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule,RouterModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   animations: [
@@ -82,6 +82,10 @@ export class HeaderComponent {
 
   toggleTheme() {
     this.themeService.toggleDarkMode();
+  }
+
+  goToSection(fragment: string) {
+   this.router.navigateByUrl('#'+fragment)
   }
 
 }

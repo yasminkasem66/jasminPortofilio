@@ -1,100 +1,34 @@
 {
-  "JASMIN": "ياسمين",
+  "JASMIN": "جاسمين",
   "Header.Item1": "عني",
   "Header.Item2": "الخبرة",
-  "Header.Item3": "مشاريع",
-  "Header.Item4": "تواصل معي",
-  "Header.cvBtn": "السيره الذاتيه",
-  "Header.cvName": "ياسمين قاسم.pdf",
-  "English": "انجليزي",
-  "Arabic": "عربي",
-  "Banner.Pretitle": "مرحبا!",
-  "Banner.name": "ياسمين قاسم",
-  "Banner.job": "مطور واجهات أمامية",
-  "Banner.Description": "عندي <span class='underline'>خبره اربع سنوات</span> في بناء الأنظمه الأماميه, وواجهات المستخدم, وتقديم حلول تكنولوجيه لجعل الويب عالم أفضل.مجتهده وأسعي دائما لكتابة كود جيد قابل للأستخدام مره أخري وسهل الأستخدام للأخرين بأستخدام, <span class='underline'>أنجلر</span> وأحياناً <span class='underline'>ريأكت</span> وجافا سكريبت.",
-  "Banner.ActionBtn": "تواصل معنا",
-  "AboutMe.Title": "About me",
-    "AboutMe.Paragraphs": [
-        "In my <span class='underline'>4 years as a developer</span>, I seek to train every day. I have worked writing <span class='underline'>unit tests</span>, <span class='underline'>performing continuous integration</span>, and covering backend developer roles with <span class='underline'>Laravel and Mysql</span>. I have led teams having empathy, exercising motivation to partners, and setting plans and goals together.",
-        "My skills also include implementing system improvements, optimizing sites, standardizing patterns, and suggesting and executing ideas that add value to the project I'm working on.",
-        "Some of the technologies that I have trained and worked on include (but are not limited to):"
-    ],
-    "AboutMe.Skills": [
-        "Angular",
-        "RxJS",
-        "HTML",
-        "CSS",
-        "Express",
-        "Node",
-        "Tailwind",
-        "Jasmine / Karma (TDD)",
-        "CI / CD",
-        "Docker"
-    ],
-    "Experience.Title": "Experience",
-    "Experience.Jobs": [
-        {
-            "Tab": "Project",
-            "Title": "Fullstack developer",
-            "Date": "December 2019 - Present",
-            "Description": [
-                "Creation and maintenance of a monitoring platform with graphics in WordPress.",
-                "Functional programming in templates and plugins to add the necessary monitoring features.",
-                "Implementation of continuous integration and daily backups.",
-                "Creation and maintenance of a second Monitoring Platform Done in Angular, Angular Material, Laravel, Mysql, RxJS, Sass with graphics (configurable), alarm system, and user management and configuration of general parameters.",
-                "Planning meetings in reports."
-            ]
-        },
-        {
-            "Tab": "Freelancer",
-            "Title": "Independent",
-            "Date": "May 2016 - Present",
-            "Description": [
-                "Implementing continuous improvements, working on frontend and backend.",
-                "Creating platforms with Angular, Laravel, ExpressJS, WordPress programmed with functional, reactive, and object-oriented programming paradigms.",
-                "Automation of processes with data structures.",
-                "Design layout with SASS, Bootstrap, Materialize, Bulma, etc."
-            ]
-        },
-        {
-            "Tab": "Moebius",
-            "Title": "FullStack developer",
-            "Date": "July 2017 - October 2018",
-            "Description": [
-                "Leading a team of 4 people in the development of a Tourism Data management platform made in Angular, Laravel, and MySQL.",
-                "Implementation CI / CD in Azure. Refactoring and optimizing application load times.",
-                "Coding of API requests with RxJS.",
-                "Creation of modules with complex reactive forms",
-                "Writing weekly reports about goals and plans."
-            ]
-        },
-        {
-            "Tab": "TechLatam",
-            "Title": "Frontend developer",
-            "Date": "February 2016 - May 2017",
-            "Description": [
-                "Creation of WordPress templates with ACF, functional programming in Javascript / jQuery, styles in SASS",
-                "integration of design improvements, and template loading times.",
-                "Effective communication with the design team, working with Avocode / Figma."
-            ]
-        },
-        {
-            "Tab": "CANTV",
-            "Title": "System analyst",
-            "Date": "November 2015 - December 2016",
-            "Description": [
-                "Programming of new functionalities for an existing employee management platform made in Angular and ExpressJS.",
-                "Perform refactoring of old code. Ensuring compatibility of every dependency in every update, along with regular Angular update as well."
-            ]
-        },
-        {
-            "Tab": "IEP",
-            "Title": "English teacher",
-            "Date": "January 2015 - July 2015",
-            "Description": [
-                "Teaching English at a basic level to an enrollment of more than 200 students."
-            ]
-        }
-    ]
-  
+  "Header.Item3": "المشاريع",
+  "Header.Item4": "الاتصال",
+  "Header.cvBtn": "السيرة الذاتية",
+  "Header.cvName": "yasmin-kasem.pdf",
+  "English": "الإنجليزية",
+  "Arabic": "العربية",
+  "Banner.Pretitle": "مرحبًا! اسمي",
+  "Banner.name": "ياسمين كاظم",
+  "Banner.job": "مطور واجهة أمامي",
+  "Banner.Description": "لدي خبرة <span class='underline'>2 سنوات</span> في تطوير الأنظمة والواجهات وحلول التكنولوجيا لجعل الويب مكانًا أفضل. أنا ملتزمة بكتابة وإعادة هيكلة الشيفرة النظيفة والقابلة لإعادة الاستخدام والقابلة للتوسعة في <span class='underline'>Angular</span> وأحيانًا في <span class='underline'>React</span> و <span class='underline'>next</span> باستخدام ممارسات جيدة ومعايير التطوير.",
+  "Banner.ActionBtn": "تواصل معي",
+  "AboutMe.Title": "عني",
+  "AboutMe.Paragraphs": [
+    "في مدة خبرتي كمطورة <span class='underline'>2 سنة</span>، أسعى للتدريب يوميًا. لقد عملت على كتابة <span class='underline'>SEO</span>، أجريت تكامل مستمر وقمت بأدوار مطور الخادم بـ <span class='underline'>Node و Mongo</span>. لقد قدمت القيادة للفرق بتمرين الحِنان، ممارسة الحفازات للشركاء، ووضع الخطط والأهداف معًا.",
+    "مهاراتي تشمل أيضًا تنفيذ تحسينات النظام، وتحسين المواقع، وتوحيد الأنماط، واقتراح وتنفيذ الأفكار التي تضيف قيمة للمشروع الذي أعمل عليه.",
+    "بعض التقنيات التي قمت بالتدريب عليها وعملت بها تشمل (ولكن لا تقتصر على):"
+  ],
+  "AboutMe.Skills": [
+    "Angular",
+    "RxJS",
+    "HTML",
+    "CSS",
+    "Express",
+    "Node",
+    "Tailwind",
+    "Angular Material",
+    "Primeng",
+    "Docker"
+  ]
 }
