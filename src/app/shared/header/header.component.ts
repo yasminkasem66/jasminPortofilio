@@ -30,7 +30,7 @@ import { animate, query, stagger, style, transition, trigger } from '@angular/an
 })
 export class HeaderComponent {
 
-  src: string = 'https://www.worldometers.info/img/flags/us-flag.gif';
+  src: string = '../../../assets/images/united-states.svg';
   alt: string = 'English';
 
   constructor(public translate: TranslateService, private themeService: ThemeService,
@@ -72,10 +72,10 @@ export class HeaderComponent {
     }
     this.languageService.updateLanguage(lang);
     if (lang === 'en') {
-      this.src = 'https://www.worldometers.info/img/flags/us-flag.gif';
+      this.src = '../../../assets/images/united-states.svg';
       this.alt = 'English';
     } else {
-      this.src = 'https://www.worldometers.info/img/flags/eg-flag.gif';
+      this.src = '../../../assets/images/egypt.svg';
       this.alt = 'Arabic';
     }
   }
