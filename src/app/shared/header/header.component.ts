@@ -1,15 +1,15 @@
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, ElementRef, Inject, PLATFORM_ID, Renderer2, ViewChild } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/@Appservice/theme/theme.service';
 import { Router, RouterModule } from '@angular/router';
 import { LanguageService } from 'src/app/@Appservice/language/language.service';
 import { animate, query, stagger, style, transition, trigger } from '@angular/animations';
- 
+
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslateModule,RouterModule],
+  imports: [CommonModule, TranslateModule, RouterModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   animations: [
@@ -32,11 +32,13 @@ export class HeaderComponent {
 
   src: string = '../../../assets/images/united-states.svg';
   alt: string = 'English';
+  @ViewChild('langMenu') langMenu!: ElementRef<HTMLDivElement>;
 
   constructor(public translate: TranslateService, private themeService: ThemeService,
-    @Inject(DOCUMENT) private document: Document,private router: Router,public languageService: LanguageService,
+    @Inject(DOCUMENT) private document: Document, private router: Router, public languageService: LanguageService,
     @Inject(PLATFORM_ID) private platformId: string,
-   ) {
+    private renderer2: Renderer2
+  ) {
     // if (isPlatformBrowser(platformId)) {
     //   this.languageService.currentLanguage.subscribe((language) => {
     //     this.changeLanguage(language, true);
@@ -52,10 +54,10 @@ export class HeaderComponent {
 
   downloadCV() {
     this.translate.get('Header.cvName').subscribe((val) => {
-       // app url
+      // app url
       let url = this.document.location.href;
       // Open a new window with the CV
-      window.open(url+'../../../assets/cv/'+val, '_blank');
+      window.open(url + '../../../assets/cv/' + val, '_blank');
     });
   }
 
@@ -78,6 +80,10 @@ export class HeaderComponent {
       this.src = '../../../assets/images/egypt.svg';
       this.alt = 'Arabic';
     }
+    this.renderer2.addClass(this.langMenu.nativeElement, 'hidden')
+
+    console.log(this.langMenu.nativeElement);
+
   }
 
   toggleTheme() {
@@ -85,7 +91,7 @@ export class HeaderComponent {
   }
 
   goToSection(fragment: string) {
-   this.router.navigateByUrl('#'+fragment)
+    this.router.navigateByUrl('#' + fragment)
   }
 
 }

@@ -1,26 +1,27 @@
-<section class="max-w-screen-xl px-4 py-32 mx-auto xs:py-10" id='about'>
-             <div  data-aos="fade-up">
-                <h3 class=" flex items-center justify-start whitespace-nowrap  mb-5 w-full text-3xl font-semibold text-[#ccd6f6] font-main   after:block after:h-[1px] after:w-[300px] after:bg-[#303c55] after:relative after:inset-0 after:-top-1 after:ms-5  ">
-                    <span class='relative text-xl font-normal me-2 font-code text-main-pink bottom-1 '>01.</span> {{"AboutMe.Title" | translate}}
-                </h3>
+<section class="pt-32 xs:py-10 " id='about'>
+    <h3
+        class=" flex items-center justify-start whitespace-nowrap  mb-5 w-full text-3xl font-semibold text-[#ccd6f6] font-main  after:block after:h-[1px] after:w-[300px] after:bg-[#303c55] after:relative after:inset-0 after:-top-1 after:ms-5  ">
+        <span class='relative text-xl font-normal me-2 font-code text-main-pink bottom-1'>01.</span> {{"AboutMe.Title"
+        | translate}}
+    </h3>
+    <div class="flex flex-col md:flex-row">
+        <div class="self-start mb-4 text-black md:me-52 me-0 dark:text-gray-400">
+            <div class="max-w-lg mt-7">
+                <p *ngFor='let text of "AboutMe.Paragraphs" | translate' [innerHTML]="text" class="">
+                </p>
+                <ul dir="auto" class="grid grid-cols-2 mt-5 list-none">
+                    <li class="relative mb-2 ps-5 text-xs font-code text-gray-400 
+                            before:content-['_↗'] before:absolute before:left-0 before:text-main-pink before:text-sm" *ngFor='let skill of "AboutMe.Skills" | translate'><span
+                            class="underline  pb-[5px]" [innerHTML]="skill"> </span></li>
+                </ul>
             </div>
-            <div class="flex flex-col md:flex-row">
-                <div class="self-start mb-4 text-black md:me-52 me-0 dark:text-white">
-                    <div class="max-w-lg mt-7">
-                        <p *ngFor='let text of "AboutMe.Paragraphs" | translate' [innerHTML]="text" data-aos="fade-up"
-                            data-aos-duration="1000">
-                        </p>
-                        <ul dir="auto" class="grid grid-cols-2 mt-5 list-none" data-aos="fade-up">
-                            <li class="skill-element" *ngFor='let skill of "AboutMe.Skills" | translate'  data-aos="fade-up" data-aos-duration="1000"><span
-                                    class="text-black underline dark:text-white"  [innerHTML]="skill" > </span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-10 md:mt-4 " data-aos="fade-up" data-aos-duration="1000">
-                    <div class="z-10 grid md:place-items-center place-content-start after:border after:border-main-pink after:block after:relative after:w-[300px] after:h-[300px] after:rounded-md after:bottom-72 after:left-6">
-                         <img
-                            class="z-50 block text-center rounded"  width="300" height="300" src="assets/images/yasmin.jpg" alt="Yasmin Kasem">
-                 </div>
-                 </div>
+        </div>
+        <div class="mt-10 md:mt-4 ">
+            <div
+                class="z-10 grid md:place-items-center place-content-start after:border after:border-main-pink after:block after:relative after:w-[300px] after:h-[300px] after:rounded-md after:bottom-72 after:left-5">
+                <img class="z-50 block text-center rounded" width="300" height="300" src="assets/images/yasmin.jpg"
+                    alt="Yasmin Kasem">
             </div>
-  </section>
+        </div>
+    </div>
+</section>

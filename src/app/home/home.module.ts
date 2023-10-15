@@ -9,6 +9,9 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ContactComponent } from './contact/contact.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { TabComponent } from './experience/tabs-group/tab/tab.component';
+import { TabsGroupComponent } from './experience/tabs-group/tabs-group.component';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -18,7 +21,10 @@ export function createTranslateLoader(http: HttpClient) {
     BannerComponent,
     AboutComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    ExperienceComponent,
+    TabComponent,
+    TabsGroupComponent
   ],
   imports: [
     CommonModule,
