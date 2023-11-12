@@ -12,7 +12,7 @@
                 <h5 class="mb-4">{{job.Date}}</h5>
                  <p *ngFor='let jobDescriptionParagraph of job.Description; let i = index' class="relative
                  mb-2 ps-5 text-xs font-code text-gray-400 
-                 before:content-['_↗'] before:absolute before:left-0 before:text-main-pink before:text-sm"
+                 before:content-['_▹'] before:absolute before:left-0 before:text-main-pink before:text-sm"
                     [innerHTML]="jobDescriptionParagraph | translate"></p>
             </app-tab>
         </ng-container>

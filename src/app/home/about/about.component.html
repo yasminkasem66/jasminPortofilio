@@ -7,12 +7,19 @@
     <div class="flex flex-col md:flex-row">
         <div class="self-start mb-4 text-black md:me-52 me-0 dark:text-gray-400">
             <div class="max-w-lg mt-7">
+                <p> {{languageService.currentLanguage |async}} </p>
                 <p *ngFor='let text of "AboutMe.Paragraphs" | translate' [innerHTML]="text" class="">
                 </p>
-                <ul dir="auto" class="grid grid-cols-2 mt-5 list-none">
-                    <li class="relative mb-2 ps-5 text-xs font-code text-gray-400 
-                            before:content-['_↗'] before:absolute before:left-0 before:text-main-pink before:text-sm" *ngFor='let skill of "AboutMe.Skills" | translate'><span
-                            class="underline  pb-[5px]" [innerHTML]="skill"> </span></li>
+                <ul dir="auto" class="grid grid-cols-2 mt-5 list-none text-start place-content-start" 
+                [ngStyle]="{'direction':( languageService.currentLanguage |async ) == 'en' ?  'ltr' :  'rtl' }"
+
+                    >
+                    <li class="relative mb-2 ps-5 text-xs font-code text-gray-400  w-fit
+                            before:content-['_▹'] before:absolute before:left-0 before:text-main-pink before:text-sm text-start" 
+                            [ngStyle]="{'direction':( languageService.currentLanguage |async ) == 'en' ?  'ltr' :  'rtl' }"
+
+                        *ngFor='let skill of "AboutMe.Skills" | translate'><span class="underline  pb-[5px]"
+                            [innerHTML]="skill"> </span></li>
                 </ul>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import { Component, ElementRef, Inject, PLATFORM_ID, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Inject, OnInit, PLATFORM_ID, Renderer2, ViewChild } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/@Appservice/theme/theme.service';
@@ -28,7 +28,7 @@ import { animate, query, stagger, style, transition, trigger } from '@angular/an
     ]),
   ],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
 
   src: string = '../../../assets/images/united-states.svg';
   alt: string = 'English';
@@ -40,17 +40,26 @@ export class HeaderComponent {
     private renderer2: Renderer2
   ) {
     // if (isPlatformBrowser(platformId)) {
-    //   this.languageService.currentLanguage.subscribe((language) => {
-    //     this.changeLanguage(language, true);
-    //   });
-    // }
-    if (isPlatformBrowser(platformId)) {
+      // }
+      if (isPlatformBrowser(platformId)) {
+      // this.languageService.currentLanguage.subscribe((language) => {
+      //   console.log(language);
+      //   console.log(localStorage.getItem('lang'));
+
+      // });
       this.themeService.isDarkMode$.subscribe((theme) => {
         this.themeService.updateTheme();
       });
     }
   }
+  ngOnInit(): void {
+   }
 
+  // ngAfterViewInit() {
+  //   if(localStorage.getItem('lang')){
+  //     this.changeLanguage(localStorage.getItem('lang')!, true);
+  //   }
+  // }
 
   downloadCV() {
     this.translate.get('Header.cvName').subscribe((val) => {
@@ -62,17 +71,7 @@ export class HeaderComponent {
   }
 
   changeLanguage(lang: string, frmLocalStorage: boolean) {
-    let html = this.document.getElementsByTagName('html')[0] as HTMLElement;
-    html.dir = lang === 'en' ? 'ltr' : 'rtl';
-    this.translate.setDefaultLang(lang);
-    let curentUrl = this.router.url;
-    if (frmLocalStorage === false) {
-      this.languageService.updateLanguage(lang);
-      this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-        this.router.navigate([curentUrl]);
-      });
-    }
-    this.languageService.updateLanguage(lang);
+    this.languageService.changeLanguageService(lang,frmLocalStorage)
     if (lang === 'en') {
       this.src = '../../../assets/images/united-states.svg';
       this.alt = 'English';
@@ -80,9 +79,8 @@ export class HeaderComponent {
       this.src = '../../../assets/images/egypt.svg';
       this.alt = 'Arabic';
     }
-    this.renderer2.addClass(this.langMenu.nativeElement, 'hidden')
+    // this.renderer2.addClass(this.langMenu.nativeElement, 'hidden')
 
-    console.log(this.langMenu.nativeElement);
 
   }
 

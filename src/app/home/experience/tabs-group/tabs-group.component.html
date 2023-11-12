@@ -4,7 +4,7 @@
       (click)="selectTab(tabIndex)"
       *ngFor="let tab of tabs; let tabIndex = index"
       [ngClass]="{ 'tab--active': selectedIndex === tabIndex }"
-      class="border-l-2 border-l-gray-600 hover:bg-[#112240] hover:text-main-pink relative transition-all cursor-pointer flex items-center w-full bg-transparent h-11 pe-5 pb-[2px] text-left whitespace-nowrap font-code text-xs text-gray-700 ps-3"
+      class="border-l-2 border-l-gray-600 hover:bg-[#112240] hover:text-main-pink  relative transition-all cursor-pointer flex items-center w-full bg-transparent h-11 pe-5 pb-[2px] text-left whitespace-nowrap font-code text-xs text-gray-700 ps-3"
     >
       {{ tab.title }}
     </li>
