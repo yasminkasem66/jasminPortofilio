@@ -20,23 +20,22 @@ export class LanguageService {
   ) {
     if (isPlatformBrowser(platformId)) {
       this.currentLanguageSubject = new BehaviorSubject<string>(
-        localStorage.getItem('lang')!
+        localStorage.getItem('jpr-lang')!
       );
 
       this.currentLanguage = this.currentLanguageSubject.asObservable();
 
-      if (!localStorage.getItem('lang')) {
-        localStorage.setItem('lang','en');
+      if (!localStorage.getItem('jpr-lang')) {
+        localStorage.setItem('jpr-lang','en');
         this.currentLanguageSubject.next('en');
         this.changeLanguageService('en',false)
       }
-      else{
-        console.log(localStorage.getItem('lang'));
-        
+      else{        
         this.changeLanguageService(this.currentLanguageSubject.value,true)
       }
     }
   }
+
   public get lang(): string {
     return this.currentLanguageSubject.value;
   }
@@ -44,19 +43,12 @@ export class LanguageService {
   changeLanguageService(lang: string, frmLocalStorage: boolean) {
     let html = this.document.getElementsByTagName('html')[0] as HTMLElement;
     html.dir = (lang === 'en') ? 'ltr' : 'rtl';
-    this.translate.setDefaultLang(lang);
-    let curentUrl = this.router.url;
-    if (frmLocalStorage === false) {
-      this.updateLanguage(lang);
-      this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-        this.router.navigate([curentUrl]);
-      });
-    }
+    this.translate.use(lang);
     this.updateLanguage(lang);
   }
 
   updateLanguage(language: string) {
-    localStorage.setItem('lang', language);
+    localStorage.setItem('jpr-lang', language);
     this.currentLanguageSubject.next(language);
   }
 }
