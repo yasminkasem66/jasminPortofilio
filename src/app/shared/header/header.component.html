@@ -65,7 +65,7 @@
             class="text-white bg-[#172a45] hover:bg-[#172a45] focus:ring-4 focus:outline-none focus:ring-[#263345] font-medium rounded-lg text-sm !px-5 !py-2  text-center inline-flex items-center dark:bg-[#172a45] dark:hover:bg-[#172a45] dark:focus:ring-[#172a45]   
             md:p-0" type="button" [ngStyle]="{'direction':alt == 'English' ?  'ltr' :  'rtl' }">
             <img width="20px" [src]="src" [alt]="alt">
-            <span class="mx-2" translate>{{alt}}</span>
+            <span class="mx-2" translate >{{alt}}</span>
             <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
               viewBox="0 0 10 6">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -80,15 +80,15 @@
                 <li (click)='changeLanguage("ar",false)'>
                   <a routerLink="/"
                     class="flex items-center justify-between px-3 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    <img src="../../../assets/images/egypt.svg" class="w-6 h-6" alt="Arabic">
-                    <span class="flag-text">{{"Arabic" | translate}}</span>
+                    <img src="../../../assets/images/egypt.svg" class="w-6 h-6" alt="arabic">
+                    <span class="flag-text">{{"arabic" | translate}}</span>
                   </a>
                 </li>
                 <li (click)='changeLanguage("en",false)'>
                   <a routerLink="/"
                     class="flex items-center justify-between px-3 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    <img src="../../../assets/images/united-states.svg" class="w-6 h-6" alt="English">
-                    <span class="flag-text">{{"English" | translate}}</span>
+                    <img src="../../../assets/images/united-states.svg" class="w-6 h-6" alt="english">
+                    <span class="flag-text">{{"english" | translate}}</span>
                   </a>
                 </li>
               </ul>
