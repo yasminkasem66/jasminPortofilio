@@ -12,6 +12,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { TabComponent } from './experience/tabs-group/tab/tab.component';
 import { TabsGroupComponent } from './experience/tabs-group/tabs-group.component';
+import { ProjectComponent } from './project/project.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -24,11 +27,14 @@ export function createTranslateLoader(http: HttpClient) {
     ContactComponent,
     ExperienceComponent,
     TabComponent,
-    TabsGroupComponent
+    TabsGroupComponent,
+    ProjectComponent,
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
+    CarouselModule ,
+    FontAwesomeModule,
     TranslateModule.forChild({
       defaultLanguage: 'en',
       loader: {
