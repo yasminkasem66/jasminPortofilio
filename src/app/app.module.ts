@@ -12,11 +12,11 @@ export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { LoaderComponent } from './shared/loader/loader.component';
+ 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,8 +33,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
         deps: [HttpClient],
       },
     }),
-    FontAwesomeModule,
-  ],
+    LoaderComponent
+   ],
   providers: [],
   bootstrap: [AppComponent]
 })

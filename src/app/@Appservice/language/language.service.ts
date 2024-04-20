@@ -1,4 +1,4 @@
-import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
+import { Inject, Injectable, PLATFORM_ID, WritableSignal, signal } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { BehaviorSubject, Observable } from 'rxjs';
@@ -9,46 +9,38 @@ import { ThemeService } from '../theme/theme.service';
   providedIn: 'root',
 })
 export class LanguageService {
-  private currentLanguageSubject!: BehaviorSubject<string>;
-  public currentLanguage!: Observable<string>;
-
+private currentLanguageSignal: WritableSignal<string>  = signal(localStorage.getItem('jpr-lang')!);
+ 
   constructor(
-    public translateService: TranslateService,
     @Inject(PLATFORM_ID) platformId: string,
-    public translate: TranslateService, private themeService: ThemeService,
-    @Inject(DOCUMENT) private document: Document, private router: Router, 
+    public translate: TranslateService, 
+    @Inject(DOCUMENT) private document: Document,
   ) {
     if (isPlatformBrowser(platformId)) {
-      this.currentLanguageSubject = new BehaviorSubject<string>(
-        localStorage.getItem('jpr-lang')!
-      );
-
-      this.currentLanguage = this.currentLanguageSubject.asObservable();
-
       if (!localStorage.getItem('jpr-lang')) {
-        localStorage.setItem('jpr-lang','en');
-        this.currentLanguageSubject.next('en');
-        this.changeLanguageService('en',false)
+        this.updateCurrentLanguage('en');
+         this.changeLanguageService('en',false)
       }
       else{        
-        this.changeLanguageService(this.currentLanguageSubject.value,true)
+        this.changeLanguageService( this.currentLanguageSignal(),true)
       }
     }
   }
 
-  public get lang(): string {
-    return this.currentLanguageSubject.value;
+  updateCurrentLanguage(lang: string) {    
+    localStorage.setItem('jpr-lang',lang);
+    this.currentLanguageSignal.set(lang);    
+  }
+
+  getCurrentLanguage() {
+    return this.currentLanguageSignal();
   }
 
   changeLanguageService(lang: string, frmLocalStorage: boolean) {
     let html = this.document.getElementsByTagName('html')[0] as HTMLElement;
     html.dir = (lang === 'en') ? 'ltr' : 'rtl';
     this.translate.use(lang);
-    this.updateLanguage(lang);
+    this.updateCurrentLanguage(lang);
   }
 
-  updateLanguage(language: string) {
-    localStorage.setItem('jpr-lang', language);
-    this.currentLanguageSubject.next(language);
-  }
 }

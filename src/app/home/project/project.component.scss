@@ -1,43 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
 
-$Navy         : #0a192f;
-$LightNavy    : #112240;
+$Navy : #0a192f;
+$LightNavy : #112240;
 $LightestNavy : #303C55;
-$Slate        : #8892b0;
-$LightSlate   : #a8b2d1;
+$Slate : #8892b0;
+$LightSlate : #a8b2d1;
 $LightestSlate: #ccd6f6;
-$White        : #e6f1ff;
-$Green        : #64ffda;
-$GreenOpacity : rgba(100,255,218,0.07);
+$White : #e6f1ff;
+$Green : #64ffda;
+$GreenOpacity : rgba(100, 255, 218, 0.07);
 
-$MainFont: Calibre,San Francisco,SF Pro Text,-apple-system,system-ui,BlinkMacSystemFont,Roboto,Helvetica Neue,Segoe UI,Arial,sans-serif;
+$MainFont: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
 $CodeFont: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, Monospace;
- 
 
-.owl-carousel-o{
+
+.owl-carousel-o {
     width: 600px !important;
     max-height: 320px;
- }
+}
+
+.owl-carousel-o2 {
+    width: 600px !important;
+    max-height: 320px;
+}
+
 .img-feature-proyect-container {
-    display:  none;
+    display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1300px) {
-    .owl-carousel-o{
+    .owl-carousel-o {
         display: none;
     }
+
     .img-feature-proyect-container {
         width: 50%;
         display: table !important;
         height: -webkit-fill-available;
+
         .img-feature-proyect-box {
             display: table-cell;
             vertical-align: middle;
         }
+
         .img-feature-proyect {
             width: 100%;
         }
     }
+
     .proyect-info-right,
     .proyect-info-left {
         width: 50%;
@@ -53,18 +63,20 @@ $CodeFont: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, M
 }
 
 @media (max-width: 768px) {
-    .owl-carousel-o{
+    .owl-carousel-o {
         display: none;
     }
+
     .project {
         .proyect-container {
             .proyect-info-left {
                 width: 100%;
             }
+
             .proyect-info-right {
                 width: 100%;
             }
- 
+
             .proyect-info-right,
             .proyect-info-left {
                 display: block !important;
@@ -73,25 +85,31 @@ $CodeFont: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, M
                 background-position: center;
                 background-repeat: no-repeat;
                 border-radius: 3px;
+
                 .proyect-box {
                     display: block;
                 }
             }
+
             .img-feature-proyect-container {
                 display: none;
             }
         }
+
         .proyect-info-right,
         .proyect-info-left {
             padding: 0px;
         }
+
         .text-right,
         .text-left {
             text-align: center !important;
         }
+
         .justify-content-end {
             justify-content: center !important;
         }
+
         .justify-content-start {
             justify-content: center !important;
         }
@@ -106,18 +124,18 @@ $CodeFont: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, M
 }
 
 ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
- ::ng-deep .owl-theme .owl-dots .owl-dot:hover span {
+::ng-deep .owl-theme .owl-dots .owl-dot:hover span {
     background-color: white !important;
 }
 
 ::ng-deep .owl-theme .owl-dots .owl-dot span {
     background: #ffffff33;
 }
-::ng-deep .owl-carousel.owl-drag .owl-item{
-    width: 600px !important;
+
+
+.owl-carousel .owl-stage-outer {
+    transform: translate3d(0, 0, 0)
 }
-
-
 
 /* width */
 
@@ -128,7 +146,7 @@ $CodeFont: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, M
 
 /* Track */
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px #8892b0;
     border-radius: 3px;
 }
@@ -136,7 +154,7 @@ $CodeFont: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, M
 
 /* Handle */
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: $Green;
     border-radius: 3px;
 }
@@ -144,6 +162,6 @@ $CodeFont: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, M
 
 /* Handle on hover */
 
- ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: $Green;
 }

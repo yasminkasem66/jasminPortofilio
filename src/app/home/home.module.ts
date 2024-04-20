@@ -14,7 +14,6 @@ import { TabComponent } from './experience/tabs-group/tab/tab.component';
 import { TabsGroupComponent } from './experience/tabs-group/tabs-group.component';
 import { ProjectComponent } from './project/project.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -33,8 +32,7 @@ export function createTranslateLoader(http: HttpClient) {
   imports: [
     CommonModule,
     HomeRoutingModule,
-    CarouselModule ,
-    FontAwesomeModule,
+    CarouselModule,
     TranslateModule.forChild({
       defaultLanguage: 'en',
       loader: {
@@ -43,6 +41,7 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+
   ]
 })
 export class HomeModule { }

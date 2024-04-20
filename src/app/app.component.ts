@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { ThemeService } from './@Appservice/theme/theme.service';
 
@@ -7,12 +7,18 @@ import { ThemeService } from './@Appservice/theme/theme.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  private themeService = inject(ThemeService);
+
   title = 'jasminPortofilio';
   darkMode = signal<boolean>(false);
+  isLoading: boolean = true;
 
-  constructor(translate: TranslateService, private themeService: ThemeService){
-    
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 4000);
   }
 
   toggleTheme() {

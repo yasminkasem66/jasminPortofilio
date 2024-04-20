@@ -97,13 +97,13 @@
             "Title": "cfc",
             "Description": "Monitoring application made from scratch with auth module, <span class='underline'>configurable graphics</span>, <span class='underline'>configurable alarms</span>, and <span class='underline'>user management</span>. It also has feedback form logic for parameter configuration.",
             "imgs": [
-                "/assets/images/projects/realState1.png",
-                "/assets/images/projects/realState2.png",
-                "/assets/images/projects/realState3.png",
-                "/assets/images/projects/realState4.png",
-                "/assets/images/projects/realState5.png",
-                "/assets/images/projects/realState6.png",
-                "/assets/images/projects/realState7.png"
+                "/assets/images/projects/realState/realState1.png",
+                "/assets/images/projects/realState/realState2.png",
+                "/assets/images/projects/realState/realState3.png",
+                "/assets/images/projects/realState/realState4.png",
+                "/assets/images/projects/realState/realState5.png",
+                "/assets/images/projects/realState/realState6.png",
+                "/assets/images/projects/realState/realState7.png"
             ],
             "Technologies": [
                 "Laravel",
@@ -111,20 +111,17 @@
                 "SASS",
                 "Angular Material",
                 "RxJS"
-            ]
+            ],
+            "ghLink": "https://github.com/yasminkasem66/RealState-psd",
+            "demoLink": "https://yasminkasem66.github.io/RealState-psd/"
         },
- 
         {
             "Title": "cfc",
             "Description": "Monitoring application made from scratch with auth module, <span class='underline'>configurable graphics</span>, <span class='underline'>configurable alarms</span>, and <span class='underline'>user management</span>. It also has feedback form logic for parameter configuration.",
             "imgs": [
-                "/assets/images/projects/realState1.png",
-                "/assets/images/projects/realState2.png",
-                "/assets/images/projects/realState3.png",
-                "/assets/images/projects/realState4.png",
-                "/assets/images/projects/realState5.png",
-                "/assets/images/projects/realState6.png",
-                "/assets/images/projects/realState7.png"
+                "/assets/images/projects/investor/investor1.png",
+                "/assets/images/projects/investor/investor2.png",
+                "/assets/images/projects/investor/investor3.png"
             ],
             "Technologies": [
                 "Laravel",
@@ -132,20 +129,19 @@
                 "SASS",
                 "Angular Material",
                 "RxJS"
-            ]
+            ],
+            "ghLink": "https://github.com/yasminkasem66/smart-investorPSD",
+            "demoLink": "https://yasminkasem66.github.io/smart-investorPSD/#"
         },
- 
         {
             "Title": "cfc",
             "Description": "Monitoring application made from scratch with auth module, <span class='underline'>configurable graphics</span>, <span class='underline'>configurable alarms</span>, and <span class='underline'>user management</span>. It also has feedback form logic for parameter configuration.",
             "imgs": [
-                "/assets/images/projects/realState1.png",
-                "/assets/images/projects/realState2.png",
-                "/assets/images/projects/realState3.png",
-                "/assets/images/projects/realState4.png",
-                "/assets/images/projects/realState5.png",
-                "/assets/images/projects/realState6.png",
-                "/assets/images/projects/realState7.png"
+                "/assets/images/projects/realState/realState1.png",
+                "/assets/images/projects/realState/realState2.png",
+                "/assets/images/projects/realState/realState3.png",
+                "/assets/images/projects/realState/realState4.png",
+                "/assets/images/projects/realState/realState5.png"
             ],
             "Technologies": [
                 "Laravel",
@@ -153,9 +149,10 @@
                 "SASS",
                 "Angular Material",
                 "RxJS"
-            ]
+            ],
+            "ghLink": " dfsd",
+            "demoLink": " dfsd"
         }
- 
     ],
     "OtherProjects.Title": "More projects",
     "OtherProjects.Projects": [
