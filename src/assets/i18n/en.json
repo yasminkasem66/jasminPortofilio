@@ -94,8 +94,30 @@
     "FeatureProjects.Label": "Featured Project",
     "FeatureProjects.Projects": [
         {
-            "Title": "cfc",
+            "Title": "Dashboard",
             "Description": "Monitoring application made from scratch with auth module, <span class='underline'>configurable graphics</span>, <span class='underline'>configurable alarms</span>, and <span class='underline'>user management</span>. It also has feedback form logic for parameter configuration.",
+            "imgs": [
+                 "/assets/images/projects/dashboard/dashboard1.png",
+                "/assets/images/projects/dashboard/dashboard2.png",
+                "/assets/images/projects/dashboard/dashboard3.png",
+                "/assets/images/projects/dashboard/dashboard4.png",
+                "/assets/images/projects/dashboard/dashboard5.png"
+            ],
+            "Technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Angular",
+                "SASS",
+                "Tailwind",
+                "RxJS"
+            ],
+            "ghLink": " https://github.com/yasminkasem66/dashboardKami",
+            "demoLink": " https://dashboard-kami-yasminkasem66s-projects.vercel.app/login"
+        },
+        {
+            "Title": "Real State",
+            "Description": "The Real Estate is a static page created with  <span class='underline'> HTML </span>,  <span class='underline'> CSS, and Bootstrap</span>, provides a sleek and responsive interface for users . Users can view property information, including images, descriptions, and prices, The design features an accessible navigation bar, a <span class='underline'> responsive layout </span> that adapts to any device, and a footer with quick links, social media icons, and contact information.",
             "imgs": [
                 "/assets/images/projects/realState/realState1.png",
                 "/assets/images/projects/realState/realState2.png",
@@ -106,53 +128,30 @@
                 "/assets/images/projects/realState/realState7.png"
             ],
             "Technologies": [
-                "Laravel",
-                "Angular",
-                "SASS",
-                "Angular Material",
-                "RxJS"
+                "html",
+                "css",
+                "Bootstrap",
+                "JavaScript"
             ],
             "ghLink": "https://github.com/yasminkasem66/RealState-psd",
             "demoLink": "https://yasminkasem66.github.io/RealState-psd/"
         },
         {
-            "Title": "cfc",
-            "Description": "Monitoring application made from scratch with auth module, <span class='underline'>configurable graphics</span>, <span class='underline'>configurable alarms</span>, and <span class='underline'>user management</span>. It also has feedback form logic for parameter configuration.",
+            "Title": "Investor PSD",
+            "Description": "The Investor is a static page created with  <span class='underline'> HTML </span>,  <span class='underline'> CSS</span>, provides a sleek and responsive interface for users. The design features an accessible navigation bar, a <span class='underline'> responsive layout </span> that adapts to any device.",
             "imgs": [
                 "/assets/images/projects/investor/investor1.png",
                 "/assets/images/projects/investor/investor2.png",
                 "/assets/images/projects/investor/investor3.png"
             ],
             "Technologies": [
-                "Laravel",
-                "Angular",
-                "SASS",
-                "Angular Material",
-                "RxJS"
+                "html",
+                "css"
             ],
             "ghLink": "https://github.com/yasminkasem66/smart-investorPSD",
             "demoLink": "https://yasminkasem66.github.io/smart-investorPSD/#"
-        },
-        {
-            "Title": "cfc",
-            "Description": "Monitoring application made from scratch with auth module, <span class='underline'>configurable graphics</span>, <span class='underline'>configurable alarms</span>, and <span class='underline'>user management</span>. It also has feedback form logic for parameter configuration.",
-            "imgs": [
-                "/assets/images/projects/realState/realState1.png",
-                "/assets/images/projects/realState/realState2.png",
-                "/assets/images/projects/realState/realState3.png",
-                "/assets/images/projects/realState/realState4.png",
-                "/assets/images/projects/realState/realState5.png"
-            ],
-            "Technologies": [
-                "Laravel",
-                "Angular",
-                "SASS",
-                "Angular Material",
-                "RxJS"
-            ],
-            "ghLink": " dfsd",
-            "demoLink": " dfsd"
         }
+  
     ],
     "OtherProjects.Title": "More projects",
     "OtherProjects.Projects": [

@@ -1,4 +1,4 @@
-<section class="pt-32 xs:py-10" id="project">
+<section class="px-8 py-12 mx-auto xs:py-10" id="project">
 
     <h3
         class="flex items-center justify-start whitespace-nowrap mb-5 w-full text-3xl font-semibold text-[#ccd6f6] font-main after:block after:h-[1px] after:w-[300px] after:bg-[#303c55] after:relative after:inset-0 after:-top-1 after:ms-5">
@@ -9,7 +9,7 @@
     <div *ngFor="
       let project of 'FeatureProjects.Projects' | translate;
       let i = index
-    " class="flex mx-0 mt-24 h-96 md:h-full md:mt-8 mb-[80px]">
+    " class="flex mx-0 h-96 md:h-full">
 
         <owl-carousel-o class="owl-carousel-o" [options]="customOptions"
             [ngClass]="{'order-1':i%2==0, 'order-2':i%2!=0,}">
@@ -23,13 +23,8 @@
         </owl-carousel-o>
 
 
-        <div [ngClass]="{'w-1/2 -ms-14 me-0 order-2':i%2==0, 'w-1/2 -me-14 ms-0 order-1':i%2!=0,}" class="h-100"
-            style="background-image: url('{{ project.img }}');">
-            <div class="proyect-box">
-                <!-- <h4 [class.text-end]="i % 2 == 0" [class.text-start]="i % 2 != 0"
-                    class="pt-0 mt-3 text-sm fw-normal text-main-pink font-code">
-                    {{ "FeatureProjects.Label" | translate }}
-                </h4> -->
+        <div [ngClass]="{'w-1/2 sm:w-full md:-ms-14 -ms-0 me-0 order-2':i%2==0, 'w-1/2 sm:w-full md:-me-14 -me-0 ms-0 order-1':i%2!=0,}" class="h-100">
+            <div class="">
                 <h5 [class.text-end]="i % 2 == 0" [class.text-start]="i % 2 != 0" class="text-3xl my-4 text-[#a8b2d1]">
                     {{ project.Title }}
                 </h5>
