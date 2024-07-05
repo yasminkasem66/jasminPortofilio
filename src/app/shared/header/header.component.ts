@@ -81,6 +81,9 @@ export class HeaderComponent {
       this.src = '/assets/images/egypt.svg';
       this.alt = 'Arabic';
     }
+    // this.langMenu
+    // ? this.renderer2.addClass(this.langMenu.nativeElement, '!hidden')
+    // : '';
    }
 
   toggleTheme() {
