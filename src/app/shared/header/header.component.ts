@@ -46,6 +46,7 @@ export class HeaderComponent {
   src: string = '../../../assets/images/united-states.svg';
   alt: string = 'English';
   @ViewChild('langMenu') langMenu!: ElementRef<HTMLDivElement>;
+  isLangMenuShown=false;
 
   constructor(
     public translate: TranslateService,
@@ -80,10 +81,7 @@ export class HeaderComponent {
       this.src = '/assets/images/egypt.svg';
       this.alt = 'Arabic';
     }
-    this.langMenu
-      ? this.renderer2.addClass(this.langMenu.nativeElement, '!hidden')
-      : '';
-  }
+   }
 
   toggleTheme() {
     this.themeService.toggleDarkMode();
@@ -92,4 +90,5 @@ export class HeaderComponent {
   goToSection(fragment: string) {
     this.router.navigateByUrl('#' + fragment);
   }
+
 }

@@ -9,21 +9,21 @@
     <div *ngFor="
       let project of 'FeatureProjects.Projects' | translate;
       let i = index
-    " class="flex mx-0 h-96 md:h-full">
+    " class="flex mx-0   gap-4">
 
         <owl-carousel-o class="owl-carousel-o" [options]="customOptions"
             [ngClass]="{'order-1':i%2==0, 'order-2':i%2!=0,}">
             <ng-container *ngFor="let img of project.imgs">
                 <ng-template carouselSlide [id]="project.Title + img + i">
                     <div #imgContainer class="max-h-80 w-[600px] overflow-auto rounded">
-                        <img class="block w-full h-full rounded" [src]="img" [alt]="project.Title" />
+                        <img class="block w-full   rounded" [src]="img" [alt]="project.Title" />
                     </div>
                 </ng-template>
             </ng-container>
         </owl-carousel-o>
 
 
-        <div [ngClass]="{'w-1/2 sm:w-full md:-ms-14 -ms-0 me-0 order-2':i%2==0, 'w-1/2 sm:w-full md:-me-14 -me-0 ms-0 order-1':i%2!=0,}" class="h-100">
+        <div [ngClass]="{'lg:-ms-14 -ms-0 order-2':i%2===0, 'lg:-me-14 -me-0 order-1':i%2!==0,}" class="lg:w-1/2 w-full  mt-16">
             <div class="">
                 <h5 [class.text-end]="i % 2 == 0" [class.text-start]="i % 2 != 0" class="text-3xl my-4 text-[#a8b2d1]">
                     {{ project.Title }}
