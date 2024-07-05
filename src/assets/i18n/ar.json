@@ -1,5 +1,5 @@
 {
-  "JASMIN": "جاسمين",
+  "JASMIN": "ياسمين",
   "Header.Item1": "عني",
   "Header.Item2": "الخبرة",
   "Header.Item3": "المشاريع",
@@ -11,15 +11,15 @@
   "Arabic": "عربي",
   "English": "English",
   "Banner.Pretitle": "مرحبًا! اسمي",
-  "Banner.name": "ياسمين كاظم",
+  "Banner.name": "ياسمين قاسم",
   "Banner.job": "مطور واجهة أمامي",
-  "Banner.Description": "لدي خبرة <span class='underline'>2 سنوات</span> في تطوير الأنظمة والواجهات وحلول التكنولوجيا لجعل الويب مكانًا أفضل. أنا ملتزمة بكتابة وإعادة هيكلة الشيفرة النظيفة والقابلة لإعادة الاستخدام والقابلة للتوسعة في <span class='underline'>Angular</span> وأحيانًا في <span class='underline'>React</span> و <span class='underline'>next</span> باستخدام ممارسات جيدة ومعايير التطوير.",
+  "Banner.Description": "لدي خبرة <span class='underline'>3 سنوات</span> في تطوير الأنظمة والواجهات وحلول التكنولوجيا لجعل الويب مكانًا أفضل. أنا ملتزمة بكتابة وإعادة هيكلة الشفرة بطريقة نظيفة وقابلة لإعادة الاستخدام والتوسع في <span class='underline'>Angular</span>، وأحيانًا في <span class='underline'>React</span> و <span class='underline'>Next.js</span> باستخدام أفضل الممارسات ومعايير التطوير.",
   "Banner.ActionBtn": "تواصل معي",
   "AboutMe.Title": "عني",
-  "AboutMe.Paragraphs": [
-    "في مدة خبرتي كمطورة <span class='underline'>2 سنة</span>، أسعى للتدريب يوميًا. لقد عملت على كتابة <span class='underline'>SEO</span>، أجريت تكامل مستمر وقمت بأدوار مطور الخادم بـ <span class='underline'>Node و Mongo</span>. لقد قدمت القيادة للفرق بتمرين الحِنان، ممارسة الحفازات للشركاء، ووضع الخطط والأهداف معًا.",
-    "مهاراتي تشمل أيضًا تنفيذ تحسينات النظام، وتحسين المواقع، وتوحيد الأنماط، واقتراح وتنفيذ الأفكار التي تضيف قيمة للمشروع الذي أعمل عليه.",
-    "بعض التقنيات التي قمت بالتدريب عليها وعملت بها تشمل (ولكن لا تقتصر على):"
+"AboutMe.Paragraphs": [
+    "في خبرتي كمطورة لمدة <span class='underline'>3 سنوات</span>، أسعى للتدريب يوميًا. لقد عملت على كتابة <span class='underline'>SEO</span>، وأجريت تكاملًا مستمرًا، وشغلت دور مطور الخادم باستخدام <span class='underline'>Node و Mongo</span>. قدمت القيادة للفرق من خلال توجيه الفريق، ممارسة التحفيز للزملاء، ووضع الخطط والأهداف بشكل مشترك.",
+    "تشمل مهاراتي أيضًا تنفيذ تحسينات النظام، وتحسين المواقع، وتوحيد الأنماط، واقتراح وتنفيذ الأفكار التي تضيف قيمة للمشروع الذي أعمل عليه.",
+    "بعض التقنيات التي تمرنت عليها وعملت بها تشمل (ولكن لا تقتصر على):"
   ],
   "AboutMe.Skills": [
     "Angular",
@@ -90,12 +90,70 @@
       ]
     }
   ],
-
+  "FeatureProjects.Title": "مشاريعي",
+  "FeatureProjects.Label": "مشروع مميز",
+  "FeatureProjects.Projects": [
+    {
+      "Title": "لوحة التحكم",
+      "Description": "تطبيقنا الابتكاري للوحة التحكم يوفر تجربة سلسة لإدارة وتصور البيانات. يتميز بصفحات تسجيل الدخول والتسجيل الآمنة، مع استخدام حارس المصادقة لضمان أن يمكن للمستخدمين المعتمدين فقط الوصول إلى صفحات معينة. اللوحة قابلة للتخصيص توفر تحديثات البيانات في الوقت الحقيقي. يمكن للمستخدمين إدارة المشاركات والبطاقات بسهولة، مع خيارات لإضافة وتحرير وحذف وتصفية المحتوى. يعزز المحرر البصري عملية الإنشاء والتعديل. خيارات التصفية والفرز القوية تساعد المستخدمين على تنظيم المعلومات بشكل فعال. مثالي للأعمال والمحترفين والمطورين، يجمع هذا التطبيق بين الوظائف والأمان وسهولة الاستخدام لتصور البيانات وتقاريرها وإدارتها.",
+      "imgs": [
+        "/assets/images/projects/dashboard/dashboard1.png",
+        "/assets/images/projects/dashboard/dashboard2.png",
+        "/assets/images/projects/dashboard/dashboard3.png",
+        "/assets/images/projects/dashboard/dashboard4.png",
+        "/assets/images/projects/dashboard/dashboard5.png"
+      ],
+      "Technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Angular",
+        "SASS",
+        "Tailwind",
+        "RxJS"
+      ],
+      "ghLink": "https://github.com/yasminkasem66/dashboardKami",
+      "demoLink": "https://dashboard-kami-yasminkasem66s-projects.vercel.app/login"
+    },
+    {
+      "Title": "العقارات",
+      "Description": "صفحة العقارات هي صفحة ثابتة تم إنشاؤها باستخدام HTML، CSS، وBootstrap، توفر واجهة نظيفة ومستجيبة للمستخدمين. يمكن للمستخدمين عرض معلومات العقارات، بما في ذلك الصور والوصف والأسعار. يتميز التصميم بشريط تنقل سهل الوصول، وتخطيط استجابة يتكيف مع أي جهاز، وتذييل يحتوي على روابط سريعة وأيقونات وسائل التواصل الاجتماعي ومعلومات الاتصال.",
+      "imgs": [
+        "/assets/images/projects/realState/realState1.png",
+        "/assets/images/projects/realState/realState2.png",
+        "/assets/images/projects/realState/realState3.png",
+        "/assets/images/projects/realState/realState4.png",
+        "/assets/images/projects/realState/realState5.png",
+        "/assets/images/projects/realState/realState6.png",
+        "/assets/images/projects/realState/realState7.png"
+      ],
+      "Technologies": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "ghLink": "https://github.com/yasminkasem66/RealState-psd",
+      "demoLink": "https://yasminkasem66.github.io/RealState-psd/"
+    },
+    {
+      "Title": "المستثمر PSD",
+      "Description": "المستثمر هو صفحة ثابتة تم إنشاؤها باستخدام HTML وCSS، توفر واجهة نظيفة ومستجيبة للمستخدمين. يتميز التصميم بشريط تنقل سهل الوصول، وتخطيط استجابة يتكيف مع أي جهاز.",
+      "imgs": [
+        "/assets/images/projects/investor/investor1.png",
+        "/assets/images/projects/investor/investor2.png",
+        "/assets/images/projects/investor/investor3.png"
+      ],
+      "Technologies": [
+        "HTML",
+        "CSS"
+      ],
+      "ghLink": "https://github.com/yasminkasem66/smart-investorPSD",
+      "demoLink": "https://yasminkasem66.github.io/smart-investorPSD/#"
+    }
+  ],
   "Contact.Pretitle": "ماذا بعد",
-"Contact.Title": "تواصل معنا!",
-"Contact.Content": "سأكون سعيدًا بتلقي اتصالك إذا كنت ترغب في التحدث عن فرص جديدة. اكتب لي، وسأرد بمجرد رؤيتي لرسالتك. تصميم صفحة واحدة بسيط يحتوي على رسالة تعريفية تتضمن معلومات أساسية حول الشخص.",
-"Contact.Btn": "قل مرحباً"
-
-  
-  
+  "Contact.Title": "تواصل معنا!",
+  "Contact.Content": "سأكون سعيدًا بتلقي اتصالك إذا كنت ترغب في التحدث عن فرص جديدة. اكتب لي، وسأرد بمجرد رؤيتي لرسالتك. تصميم صفحة واحدة بسيط يحتوي على رسالة تعريفية تتضمن معلومات أساسية حول الشخص.",
+  "Contact.Btn": "قل مرحباً"
 }

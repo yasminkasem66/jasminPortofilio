@@ -95,7 +95,7 @@
     "FeatureProjects.Projects": [
         {
             "Title": "Dashboard",
-            "Description": "Monitoring application made from scratch with auth module, <span class='underline'>configurable graphics</span>, <span class='underline'>configurable alarms</span>, and <span class='underline'>user management</span>. It also has feedback form logic for parameter configuration.",
+            "Description": "Our innovative Dashboard Application offers a <span class='underline'> seamless experience </span> for <span class='underline'>managing </span> and <span class='underline'> visualizing data</span>. It features secure login and sign-up pages, using an authentication guard to ensure only authorized users can access specific pages.The customizable dashboard provides real-time data updates. Users can easily manage posts and cards, with options to add, edit, delete, and filter content. A visual editor enhances the creation and modification process.Powerful filtering and sorting options help users organize information effectively. Ideal for businesses, professionals, and developers, this app combines functionality, security, and user-friendliness for data visualization, reporting, and management.",
             "imgs": [
                  "/assets/images/projects/dashboard/dashboard1.png",
                 "/assets/images/projects/dashboard/dashboard2.png",
@@ -152,77 +152,6 @@
             "demoLink": "https://yasminkasem66.github.io/smart-investorPSD/#"
         }
   
-    ],
-    "OtherProjects.Title": "More projects",
-    "OtherProjects.Projects": [
-        {
-            "Title": "Pokemon",
-            "Description": "Pokemon search engine that uses the pokeapi. Object-oriented programming was used to organize the information of the pokemons along with their respective image.",
-            "ghLink": "https://github.com/andresjosehr/pokemon-angular",
-            "demoLink": "https://projects.andresjosehr.com/pokemon-list",
-            "Technologies": [
-                "Angular",
-                "RxJs",
-                "API",
-                "Bootstrap"
-            ]
-        },
-        {
-            "Title": "Coming soon page",
-            "Description": "Personal project of a two-column split page to be used as a 'Coming soon page'. Scheduled to be a fully responsive design. It has a form field to subscribe by email.",
-            "ghLink": "https://github.com/andresjosehr/coming-soon-page",
-            "demoLink": "https://projects.andresjosehr.com/coming-soon-page",
-            "Technologies": [
-                "Angular",
-                "SASS",
-                "CSS GRID",
-                "Reactive form"
-            ]
-        },
-        {
-            "Title": "Four card feature section",
-            "Description": "A single page that has a minimal design, listing four features on four cards. Input animations are done with angular animations.",
-            "ghLink": "https://github.com/andresjosehr/fourd-card-feature-section",
-            "demoLink": "https://projects.andresjosehr.com/four-card-feature-section",
-            "Technologies": [
-                "Angular",
-                "SASS",
-                "CSS GRID"
-            ]
-        },
-        {
-            "Title": "Social proof section",
-            "Description": "Personal project of a page designed from a Figma layout. Angular was used for development together with SASS and CSS GRID.",
-            "ghLink": "https://github.com/andresjosehr/social-proof-section",
-            "demoLink": "https://projects.andresjosehr.com/social-proof-section",
-            "Technologies": [
-                "Angular",
-                "CSS GRID",
-                "GIT"
-            ]
-        },
-        {
-            "Title": "FAQ accordion card",
-            "Description": "FAQ accordion with logic and animations made in Angular.",
-            "ghLink": "https://github.com/andresjosehr/faq-accordion",
-            "demoLink": "https://proyectos.andresjosehr.com/faq-accordion",
-            "Technologies": [
-                "Angular",
-                "CSS GRID",
-                "Angular animations"
-            ]
-        },
-        {
-            "Title": "Profile card",
-            "Description": "Simple one-page design that features a profile letter with basic information about a person.",
-            "ghLink": "https://github.com/andresjosehr/profile-card-component",
-            "demoLink": "https://proyectos.andresjosehr.com/profile-card-component",
-            "Technologies": [
-                "Angular",
-                "SASS",
-                "GIT"
-            ]
-        }
     ],
     "Contact.Pretitle": "What’s Next",
     "Contact.Title": "Get in touch!",
